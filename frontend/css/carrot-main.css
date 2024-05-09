@@ -49,7 +49,8 @@ main {
 .write-btn {
   background-color: orangered;
   color: white;
-  padding: 15px 15px 15px 15px;
+  padding: 10px 15px 10px 15px;
+  font-size: 15px;
   border-radius: 25px;
   position: fixed;
   bottom: 120px;
@@ -57,4 +58,5 @@ main {
   font-weight: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
+  text-decoration: none;
 }
