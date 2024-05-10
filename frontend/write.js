@@ -1,11 +1,14 @@
 const form = document.getElementById("write-form");
 
 const handleSubmitForm = async (event) => {
+  const insertAt = new Date().getTime();
+  const formdata = new FormData(form);
+  formdata.append("insertAt", insertAt);
   event.preventDefault();
   try {
     const res = await fetch("/items", {
       method: "POST",
-      body: new FormData(form),
+      body: formdata,
     });
     const data = await res.json();
     if (data === "200") window.location.pathname = "/";
