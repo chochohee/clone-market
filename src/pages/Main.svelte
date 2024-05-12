@@ -1,7 +1,6 @@
 <script>
     let hour=new Date ().getHours();
     let min = new Date().getMinutes();
-
 </script>
 <header>
     <div class="info-bar">
